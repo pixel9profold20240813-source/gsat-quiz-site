@@ -9,8 +9,11 @@ import {
 import { gradeQuestion, computeSetScore, estimateLevel } from "./scoring.js";
 import { getLevelScale } from "./examConfig.js";
 import SettingsScreen from "./SettingsScreen.jsx";
+import { meta as MATHA_111_META, questions as MATHA_111_QUESTIONS } from "./data_111_mathA.js";
 
-const BUILTIN_MODULES = []; // 學測版目前沒有內建題庫，需透過設定頁上傳 questions_merged.json
+const BUILTIN_MODULES = [
+  { meta: MATHA_111_META, questions: MATHA_111_QUESTIONS },
+];
 const PROGRESS_STORAGE_KEY = "cap-quiz-progress-v2";
 const SCORE_MODE_STORAGE_KEY = "cap-quiz-score-mode-v1";
 
